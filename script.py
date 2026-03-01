@@ -1,3 +1,7 @@
+import os
+import random
+
+
 def foo(x):
     with open("output.txt", "w") as info:
         for i in range(x):
@@ -5,4 +9,7 @@ def foo(x):
 
 
 if __name__ == "__main__":
-    foo(1000)
+    count = os.getenv("LIMIT", random.randint(500, 1000))
+    print(f"Counting to {count}")
+    foo(count)
+    print("Done")
