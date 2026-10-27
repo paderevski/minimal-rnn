@@ -1,6 +1,6 @@
 import os
 import random
-
+import statsmodels.api as sm
 
 def foo(x):
     with open("output.txt", "w") as info:
