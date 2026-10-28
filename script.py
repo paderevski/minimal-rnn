@@ -11,7 +11,7 @@ def foo(x):
             A = np.random.rand(4000,4000)
             B = np.random.rand(4000,4000)
             U,S,V = np.linalg.svd(A)
-            A = U @ S @ V.T
+            A = U @ np.diag(S) @ V.T
             C = A @ B
             info.write(f"Counter: {i}\n")
 
