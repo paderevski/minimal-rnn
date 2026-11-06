@@ -1,8 +1,3 @@
-import os
-import random
-import statsmodels.api as sm
-import numpy as np
-
 def foo(x):
     with open("output.txt", "w") as info:
         for i in range(x):
