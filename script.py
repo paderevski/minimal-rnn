@@ -1,3 +1,6 @@
+import os
+import random
+
 def foo(x):
     with open("output.txt", "w") as info:
         for i in range(x):
