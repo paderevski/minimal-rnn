@@ -17,7 +17,10 @@ def foo(x):
 
 
 if __name__ == "__main__":
-    count = os.getenv("LIMIT", random.randint(30, 90))
+    try:
+        count = min(int(os.getenv("LIMIT", random.randint(30, 90))),3600)
+    except ValueError:
+        count = 60
     print(f"Counting to {count}")
     foo(count)
     print("Done")
