@@ -1,3 +1,0 @@
-Sleeping Counter: 0
-Sleeping Counter: 1
-Sleeping Counter: 2
